@@ -45,8 +45,12 @@ I created my two functions in javascript and they were linked to my index.html p
 After the user clicks on the red generate password button they are prompted with a series of questions to answer so my code can create them a password. 
 
 
-![](/ReadMe_images/Screen Shot 2020-09-22 at 3.10.08 PM.png)
 
+
+
+
+while statements: 
+![](images/alert_select.png)
 
 ## Contribute
 If you’d like to fork this project from github please feel free! With a pull request I can grant you access to leave comments and notes about this project. 
