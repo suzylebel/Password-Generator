@@ -44,11 +44,16 @@ I created my two functions in javascript and they were linked to my index.html p
 
 After the user clicks on the red generate password button they are prompted with a series of questions to answer so my code can create them a password. 
 
-
-
-
-
-
+The user has to:
+1. select a # between 8 and 128 
+2. Select at least one:
+  a. speical chracter
+  b. upper case letter
+  c. lower case letter
+  d. number 
+  
+If these are met then a random password will be generated and returned to the user on the screen.  
+  
  While statements: 
  I created 2 while statements that alert the user if what they have selected or typed in is not a valid statement. 
  If they select a number less than 8 or over 128 (or invalid things such as letters) it will alert them to "try again" and select a number so a password can be generated. 
@@ -70,7 +75,68 @@ After the user clicks on the red generate password button they are prompted with
     var numbers = confirm("Do you want numbers? (click OK for yes, or cancel for no)");
     var specialCharacters = confirm("Do you want special characters? (click OK for yes, or cancel for no)");
     
+If the user doesn't select one of these as true it will alert this:    
+    
 ![](images/alert_select.png)
+
+I created 4 string arrays for my variables in my upcoming if statements: 
+```
+ var numberArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  var letterLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+  var letterUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+  var symbols = ["!", "#", "$", "%", "&", "'", "(", ")", ",", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]", "^", "_", "`", "{", "|", "~"];
+```
+Then creating my "if" statements is where the bulk of this code happens: 
+
+```
+  if (upperCase) {
+    userSelection = userSelection.concat(letterUpper);
+    password += getRandomchar(letterUpper);
+  }
+  ```
+  This statement explains that if they have selected that they want uppercase letters in the password I will get 1 random character that is upper case. 
+  
+  This repeats for all of the other 3 conditions if they are deemed true. 
+  
+  Which ever is true runs through a for loop and this is where what ever length the user has requested their password to be happens. 
+  
+  ``` for (var i = password.length; i < passwordLength; i++) {
+      password += getRandomchar(userSelection); 
+ ```
+      
+  
+  This is the end of the function. 
+  
+  it still needs to run through one more function the infamous: Math.floor(Math.random) which will randomiza all of my variables that were selected to be true!
+  
+  ``` function getRandomchar(charArray) {
+    var randomIndex = Math.floor(Math.random() * charArray.length);
+    return (charArray[randomIndex]);
+  ```
+  I decided to pull my math.random function outside of the first function so I am not repeating myself and am only randomizing what is selected! I could of put it inside my if statements but this would of been "dry" coding. 
+  
+  
+```
+ var generateBtn = document.querySelector("#generate");
+
+  // Write password to the #password input
+  function writePassword() {
+    var password = generatePassword();
+    var passwordText = document.querySelector("#password");
+
+    passwordText.value = password;
+  }
+
+  // Add event listener to generate button
+  generateBtn.addEventListener("click", writePassword);
+```
+This code was provided for us, but returns the password into the text box so the user can see what their password is!
+The addEventListener is looking for the "click" on generate password on the index.html page. 
+
+
+Here is a generated password for a user that selected "10" as the lenght of their password and to include: numbers, upper, lower, and special characters: 
+
+![](images/final_generate.png)
 
 ## Contribute
 If you’d like to fork this project from github please feel free! With a pull request I can grant you access to leave comments and notes about this project. 
