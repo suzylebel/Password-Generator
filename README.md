@@ -5,17 +5,15 @@ Explore the [Deployed Password Generator](https://suzylebel.github.io/Password-G
 View the [Github page](https://github.com/suzylebel/Password-Generator)
 
 ## Table of Contents
-1. User story
-
-  
+1. [User story]{#User-story)
 2. About the Project
 3. Tech/Framework used
 4. Code Breakdown
-5. Contributing
+5. UI // Things to update
 6. License
 7. Contact
 8. Credits
-9. UI // Things to update
+
 
 
  ## User story 
@@ -30,10 +28,6 @@ SO THAT I can create a strong password that provides greater security
 ## About the Project
 
 The goal of this project was to create a password generator with the selected length prompted to the user, and to randomly distrubute characters, letters and numbers based on what the users request was. My first vision was more complicated than it needed to be. Using javascript, I created 2 functions: The (generatePassword) and anothe function that held Math.floor(Math.Random). My approach to this was to avoid the "dry principle: do not repeat yourself in coding." I found myself repeating lots of code and was able to condense it to less than 80 lines of javascript code. 
-
-## Continuity on all 3 pages
-
-On all 3 pages the navbar, background image, and sticky footer are the same. The background image was taken from the sample images to complete the exact look requested by our proffesor, John. When the pages are shrunk the navbar has a dropdown bar and is responsive on all of the pages. 
 
 
 ## Tech Used
@@ -140,7 +134,14 @@ Here is a generated password for a user that selected "10" as the lenght of thei
 
 Here is a generated password for a user that selected "100" to be the length of their password and to include only uppercase letters and numbers: 
 
-![](images/Screen Shot 2020-09-22 at 4.28.51 PM.png)
+``` 
+I0E8WQF3V4FG9JERJMNS6R30QXLZHOEJHLNV48ZLDL5DOVXMPA3RCT3GINCRQ7CU9YB0KOFUOG84NP3VA2TG7RP84W1QHT7I165Q
+```
+
+## UI
+I would like to be able to store the passwords generated and give the user an easier return option to restart their password conditions. 
+
+I would also create a "copy to clipboard" event listener since the user is likely to use these password somewhere else. A long length password would be hard to remember or type so copy and paste function would beneift the user. 
 
 ## Contribute
 If you’d like to fork this project from github please feel free! With a pull request I can grant you access to leave comments and notes about this project. 
@@ -159,5 +160,4 @@ Project Link can be found [here.](https://suzylebel.github.io/Password-Generator
 Assistance from Amanda Crawford (BCS Tutor). 
 
 
-## UI
-I would like to be able to store the passwords generated and give the user an easier return option to restart their password conditions. 
+
