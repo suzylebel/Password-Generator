@@ -138,6 +138,10 @@ Here is a generated password for a user that selected "10" as the lenght of thei
 
 ![](images/final_generate.png)
 
+Here is a generated password for a user that selected "100" to be the length of their password and to include only uppercase letters and numbers: 
+
+![](images/Screen Shot 2020-09-22 at 4.28.51 PM.png)
+
 ## Contribute
 If you’d like to fork this project from github please feel free! With a pull request I can grant you access to leave comments and notes about this project. 
 
