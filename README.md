@@ -6,13 +6,13 @@ View the [Github page](https://github.com/suzylebel/Password-Generator)
 
 ## Table of Contents
 1. [User story](#User-story)
-2. About the Project
-3. Tech/Framework used
-4. Code Breakdown
-5. UI // Things to update
-6. License
-7. Contact
-8. Credits
+2. [About the Project](#About-the-Project)
+3. [Tech/Framework used](#Tech-Used)
+4. [Code Breakdown](Code-Breakdown)
+5. [UI // Things to update](#UI)
+6. [License](#License)
+7. [Contact](#Contact)
+8. [Credits](#Credit)
 
 
 
