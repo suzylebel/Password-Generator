@@ -5,7 +5,7 @@ Explore the [Deployed Password Generator](https://suzylebel.github.io/Password-G
 View the [Github page](https://github.com/suzylebel/Password-Generator)
 
 ## Table of Contents
-1. [User story]{#User-story)
+1. [User story](#User-story)
 2. About the Project
 3. Tech/Framework used
 4. Code Breakdown
