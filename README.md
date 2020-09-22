@@ -2,7 +2,7 @@ HOMEWORK ASSIGNMENT 3: Password Generator
 
 Explore the [Deployed Password Generator](https://suzylebel.github.io/Password-Generator/)
 
-View the [Github page](https://github.com/suzylebel/Password-Generator
+View the [Github page](https://github.com/suzylebel/Password-Generator)
 
 ## Table of Contents
 1. User story
