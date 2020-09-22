@@ -49,7 +49,27 @@ After the user clicks on the red generate password button they are prompted with
 
 
 
-while statements: 
+ While statements: 
+ I created 2 while statements that alert the user if what they have selected or typed in is not a valid statement. 
+ If they select a number less than 8 or over 128 (or invalid things such as letters) it will alert them to "try again" and select a number so a password can be generated. 
+
+ 
+ ```while (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)){ 
+    passwordLength = prompt("Please select a number between 8 and 128 to generate your password characters.");
+  }
+  ```
+![](images/select_pwd.png)
+ 
+ The while statement for the lowercase, uppercase, numbers and special characters is crucial because if they select 'cancel for all 4 my code has no way to generate a password. It will restate the confirm questions to the user so a password can be generated. 
+ 
+
+    while (lowerCase === false && upperCase === false && numbers === false && specialCharacters === false) {
+    alert("Must select a character type to create a password!")
+    var upperCase = confirm("Do you want uppercase letters? (click OK for yes, or cancel for no)");
+    var lowerCase = confirm("Do you want lowercase letters? (click OK for yes, or cancel for no)");
+    var numbers = confirm("Do you want numbers? (click OK for yes, or cancel for no)");
+    var specialCharacters = confirm("Do you want special characters? (click OK for yes, or cancel for no)");
+    
 ![](images/alert_select.png)
 
 ## Contribute
