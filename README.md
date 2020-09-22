@@ -1,12 +1,13 @@
 HOMEWORK ASSIGNMENT 3: Password Generator
 
 Explore the [Deployed Password Generator](https://suzylebel.github.io/Password-Generator/)
-
 View the [Github page](https://github.com/suzylebel/Password-Generator)
 
 ## Table of Contents
 1. [User story](#User-story)
 2. [About the Project](#About-the-Project)
+   *Explore the [Deployed Password Generator](https://suzylebel.github.io/Password-Generator/)
+   *View the [Github page](https://github.com/suzylebel/Password-Generator)
 3. [Tech/Framework used](#Tech-Used)
 4. [Code Breakdown](Code-Breakdown)
 5. [UI // Things to update](#UI)
